@@ -179,6 +179,7 @@ body {
     grid-template-columns: repeat(2, 2fr);
     padding-top: 3rem;
     grid-gap: 20px;
+    padding-bottom: 3%;
 }
 
 .about-content > div {
@@ -225,6 +226,11 @@ main h1 {
     justify-content: center;
     column-gap: 30vh;
     text-decoration: none;
+    visibility: hidden;
+    animation-name: slideInLeft;
+    animation-duration: 0.7s;
+    animation-delay: 0.3s;
+    animation-fill-mode: forwards;
 }
 .portfolio a{
     text-decoration: none;
@@ -240,12 +246,22 @@ main h1 {
     padding-top: 3rem;
     grid-gap: 20px;
     margin-right: 10%;
+    padding-right: 3%;
+    padding-bottom: 3%;
+    overflow-y: hidden;
+
+
 }
 .portfolio .items > div{
     margin-left: 10%;
     border: 6px solid var(--color-text-sec);
     border-radius: 15px;
     box-shadow: 7px 7px 2px var(--color-shadow);
+    visibility: hidden;
+    animation-name: slideInBottom;
+    animation-duration: 0.9s;
+    animation-delay: 0.4s;
+    animation-fill-mode: forwards;
 }
 .portfolio .items > div>* {
     padding: 5px;
