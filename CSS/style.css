@@ -1,0 +1,506 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    overflow-x: hidden;
+}
+
+:root {
+    --color-background: #E3856B;
+    --color-text-prim: #EECCD3;
+    --color-text-sec: #EEC95C;
+    --color-background-sec: #DC7165;
+    --color-shadow: lightblue;
+}
+.dm{
+    --color-background: #1f1154;
+    --color-text-prim: #EECCD3;
+    --color-text-sec: #02a103;
+    --color-background-sec: #2f1c77;
+    --color-shadow: #4b4b4b;
+}
+
+body {
+    cursor: default;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3rem;
+    background-color: var(--color-background);
+    color: var(--color-text-prim);
+}
+
+.container {
+    display: none;
+}
+
+.header {
+    min-height: 100vh;
+    padding: 0;
+    overflow: hidden;
+}
+
+.active {
+    display: block;
+}
+
+.header-content {
+    grid-template-columns: repeat(2, 1fr);
+    min-height: 100vh;
+    display: grid;
+}
+
+.header-content .left-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 5rem;
+    visibility: hidden;
+}
+
+.header-content .left-header .top {
+    font-size: 3rem;
+}
+
+.header-content .left-header .top span {
+    color: var(--color-text-sec);
+}
+
+.header-content .left-header p {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    line-height: 2rem;
+}
+
+.header-content .right-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin-right: 40%;
+    margin-left: 10%;
+}
+.header-content .right-header h1{
+    align-content: center;
+    text-align: center;
+}
+
+.header-content .left-header p {
+    animation-name: slideInLeft;
+    animation-duration: 0.7s;
+    animation-delay: 0.3s;
+    animation-fill-mode: forwards;
+
+}
+.header-content .left-header h1 {
+    animation-name: slideInTop;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.header-content .left-header .btn-container {
+    animation-name: slideInBottom;
+    animation-duration: 0.6s;
+    animation-delay: 0.4s;
+    animation-fill-mode: forwards;
+}
+
+.dog:hover {
+    animation-name: vibrate;
+    animation-duration: 0.7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.header-content .right-header span {
+    color: var(--color-text-sec);
+}
+
+.btn-container {
+    display: flex;
+    align-self: flex-start;
+    overflow: hidden;
+}
+
+.main-btn {
+    text-decoration: none;
+    border: 1px solid var(--color-text-sec);
+    border-radius: 30px;
+    font-weight: 600;
+    color: var(--color-text-prim);
+    position: relative;
+    display: flex;
+    transition: 0.4s all ease;
+    overflow: hidden;
+}
+
+.main-btn::before {
+    content: "";
+    position: absolute;
+    transform: translateX(100%);
+    border-radius: 30px;
+    transition: all 0.6s ease-out;
+    z-index: -1;
+}
+
+.main-btn .btn-text {
+    padding: 0 1.5rem;
+}
+
+.btn-icon {
+    background-color: var(--color-text-sec);
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    padding: 1rem;
+}
+
+/*About section*/
+
+.about-content h1 {
+    text-align: center;
+    justify-items: center;
+}
+
+.title {
+    position: relative;
+    text-align: center;
+    margin-top: 5rem;
+    font-size: 600%;
+    visibility: hidden;
+    animation-name: slideInTop;
+    animation-duration: 0.7s;
+    animation-delay: 0.3s;
+    animation-fill-mode: forwards;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    padding-top: 3rem;
+    grid-gap: 20px;
+}
+
+.about-content > div {
+    margin-left: 10%;
+    border: 6px solid var(--color-text-sec);
+    border-radius: 15px;
+    box-shadow: 7px 7px 2px var(--color-shadow);
+    visibility: hidden;
+    transition: transform 0.1s ease-in-out;
+    animation-duration: 0.7s;
+    animation-delay: 0.3s;
+    animation-fill-mode: forwards;
+}
+
+main h1 {
+    text-align: center;
+    justify-items: center;
+}
+
+.about-content .information-left {
+    justify-self: left;
+    padding: 0 5% 5%;
+    animation-name: slideInLeft;
+}
+
+.about-content span {
+    color: var(--color-text-sec);
+}
+
+.about-content .skills-right {
+    margin-right: 20%;
+    padding: 0 5% 5%;
+    animation-name: slideInRight;
+}
+
+.about-content .skills-right .skill {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-between;
+}
+.portfolio .middle{
+    display:flex;
+    justify-content: center;
+    column-gap: 30vh;
+    text-decoration: none;
+    border: 3px solid navy;
+}
+.portfolio a{
+    text-decoration: none;
+    color: var(--color-text-prim);
+    font-size: xx-large;
+}
+.portfolio span{
+    color: var(--color-text-sec)
+}
+.portfolio .items {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    padding-top: 3rem;
+    grid-gap: 20px;
+    margin-right: 10%;
+}
+.portfolio .items > div{
+    margin-left: 10%;
+    border: 6px solid var(--color-text-sec);
+    border-radius: 15px;
+    box-shadow: 7px 7px 2px var(--color-shadow);
+}
+.portfolio .items > div>* {
+    padding: 5px;
+}
+.portfolio .items a{
+    display:flex;
+    justify-content: center;
+}
+
+.contact-content {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    align-self: center;
+    grid-gap: 10px;
+    font-size: 2rem;
+}
+
+.contact-content .info {
+    display: flex;
+    gap: 20px;
+}
+
+.contact-content .right-side {
+    visibility: hidden;
+    margin-right: 5rem;
+    animation-name: slideInRight;
+    animation-duration: 1.1s;
+    animation-delay: 0.6s;
+    animation-fill-mode: forwards;
+}
+
+.contact-content .right-side div > * {
+    display: flex;
+    outline: none;
+    border: none;
+    resize: none;
+    background-color: var(--color-background-sec);
+    color: var(--color-text-prim);
+    font-size: 1.5rem;
+    border-radius: 30px;
+    padding: 20px;
+    margin: 0.5rem 1rem 0.5rem 0.5rem;
+    width: 97%;
+}
+
+.contact-content .right-side .buttons {
+    display: flex;
+}
+
+.contact-content .right-side .buttons > * {
+    justify-content: center;
+    font-size: 2rem;
+    letter-spacing: 0.3rem;
+    border: 3px solid var(--color-text-sec);
+}
+
+.contact-content .left-side {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    visibility: hidden;
+    animation-name: slideInLeft;
+    animation-duration: 1.2s;
+    animation-delay: 0.6s;
+    animation-fill-mode: forwards;
+}
+
+.contact-content .left-side div {
+    margin-bottom: 30px;
+    overflow: auto;
+    word-wrap: break-word;
+    color: var(--color-text-sec);
+}
+
+.contact-content .left-side div p {
+    color: var(--color-text-prim)
+}
+
+
+/* Title animation */
+.title::before {
+    content: attr(data-text);
+    position: absolute;
+    overflow: hidden;
+    text-align: left;
+    visibility: hidden;
+    top: 0;
+    max-width: 100%;
+    white-space: nowrap;
+    color: var(--color-text-sec);
+    animation: animate 10s linear forwards;
+    animation-delay: 2s;
+}
+
+/* Download button animations */
+.main-btn:hover {
+    transition: all 0.6s ease-out;
+    color: var(--color-background);
+}
+
+.main-btn:hover::before {
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-text-sec);
+    transform: translateX(0);
+    transition: all 0.6s ease-out;
+}
+
+.contact-content .right-side form div > *:focus {
+    border: 3px solid var(--color-text-sec);
+}
+
+/*Animations*/
+@keyframes slideInLeft {
+    from {
+        visibility: hidden;
+        transform: translateX(-101vh);
+    }
+    to {
+        visibility: visible;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        visibility: hidden;
+        transform: translateX(101vh);
+    }
+    to {
+        visibility: visible;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInTop {
+    from {
+        visibility: hidden;
+        transform: translateY(-101vh);
+    }
+    to {
+        visibility: visible;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInBottom {
+    from {
+        max-height: 100vh;
+        visibility: hidden;
+        transform: translateY(100vh);
+    }
+    to {
+        box-sizing: border-box;
+        visibility: visible;
+        transform: translateY(0);
+    }
+}
+
+@keyframes animate {
+    0% {
+        visibility: visible;
+        width: 0;
+    }
+    100% {
+        visibility: visible;
+        width: 100%;
+    }
+}
+@keyframes vibrate {
+    0% { transform: translate(2px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(0px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(2px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(2px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) }
+}
+
+
+
+/* NavBar */
+.menu {
+    position: fixed;
+    transform: translateY(-50%);
+    top: 50%;
+    right: 3%;
+    pointer-events: none;
+}
+
+.menu li {
+    padding-top: 30px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    font-size: 1.5rem;
+
+}
+.menu li i {
+    position: absolute;
+    color: var(--color-background);
+    transform: translate(-50%, -50%);
+}
+
+.menu li p {
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-right: 10px;
+    opacity: 0;
+    transition: 0.3s ease-in;
+}
+
+.menu span {
+    pointer-events: all;
+    padding: 1.7rem;
+    cursor: pointer;
+}
+
+.menu .active-btn span {
+    cursor: default;
+    background-color: var(--color-text-prim);
+}
+
+.menu li:hover p {
+    opacity: 1;
+}
+
+.lightmode{
+    border: 1px solid navy;
+    position: fixed;
+    top: 3%;
+    right: 3%;
+    pointer-events: none;
+}
+.lightmode div {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    font-size: 1.8rem;
+}
+.lightmode div i {
+    position: absolute;
+    color: var(--color-background);
+    transform: translate(-50%, -50%);
+}
+.lightmode span {
+    pointer-events: all;
+    padding: 1.7rem;
+    cursor: pointer;
+}

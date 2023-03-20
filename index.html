@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3b82c12b72.js" crossorigin="anonymous"></script>
+
+
+</head>
+<body class="main-content ">
+<header class="container header active" id="home">
+    <div class="header-content">
+        <div class="left-header">
+            <h1 class="top">
+                Hi, I'm <span>Krystian Cichorz.</span> <br>
+                A Junior Web Developer.
+            </h1>
+            <p>
+                I'm a Junior Web Developer. Trying to take my first steps as Developer.
+                I love making beautiful things! Welcome to my portfolio.
+            </p>
+            <div class="btn-container">
+                <a href="" class="main-btn">
+                    <span class="btn-text">Download CV</span>
+                    <span class="btn-icon"></span>
+                </a>
+            </div>
+        </div>
+        <div class="right-header">
+            <img class="dog" alt="dog.png" src="Images/dog.png">
+            <h1>Pet.<span>ME</span></h1>
+        </div>
+    </div>
+</header>
+<main>
+    <div class="container about" id="about">
+        <h1 class="title" data-text="ABOUT.ME">ABOUT.ME</h1>
+        <div class="about-content">
+            <div class="information-left">
+                <h1>INFORMATION ABOUT.<span>ME</span></h1>
+                <p>I'm Krystian, but you can call me Krys.
+                    I study Computer Science at the Lublin University of Technology (2nd year).
+                    In the future I'd like to be a software engineer.
+                    I like making new stuff, it's pleasing feeling when you enjoy what you do.
+                    In high school I was interested in networking more than coding. I went to electronic school which I
+                    completed, and I've got an iCT technician.
+                    When I have some free time I like to finish things that I started, like this portfolio website =D.
+                    I'm
+                    passionate about fountain pens, board games and travelling.
+                </p>
+            </div>
+            <div class="skills-right">
+                <h1><span>MY</span>.SKILLS</h1>
+                <div class="skill">
+                    <div class="frontend">
+                        <div><h2>Frontend</h2></div>
+                        <div>&#x2022; HTML5</div>
+                        <div>&#x2022; CSS</div>
+                        <div>&#x2022; JavaScript</div>
+                    </div>
+                    <div class="backend">
+                        <div><h2>Backend</h2></div>
+                        <div>&#x2022; Java</div>
+                        <div>&#x2022; C++</div>
+                    </div>
+                    <div class="other">
+                        <div><h2>Other</h2></div>
+                        <div>&#x2022; OracleDB / SQL</div>
+                        <div>&#x2022; Linux</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container portfolio" id="portfolio">
+        <h1 class="title" data-text="MY.PORTFOLIO">MY.PORTFOLIO</h1>
+        <div class="middle">
+            <a href="https://github.com/Krrystian">
+                <i class="fa-brands fa-github"></i> <span>Git</span>Hub</a>
+            <a href="https://www.linkedin.com/in/krystian-cichorz-647618207/">
+                <i class="fa-brands fa-linkedin"></i> <span>Linked</span>In</a>
+        </div>
+        <div class="items">
+            <div>
+                <h1><span>Weather</span> App</h1>
+                <p>Weather app that tells not only a currenct time but also date fact.
+                It uses OpenWeatherMapAPI and NumbersAPI. If you're connected to Internet it takes your current location based on your ip address.
+                Design was build using JavaFX.</p>
+                <a href="https://github.com/Krrystian/WeatherApplication">Link Here</a>
+            </div>
+            <div>
+                <h1><span>TechGear</span>Shop</h1>
+                <p>TechGearShop is a current project that I'm working on. It's using Bootstrap5 framework.
+                It uses localStorage, fetch API and more... Bootstrap is mobile-first
+                so I was mainly targeting mobile devices, so It's the opposite to this website =D.</p>
+                <a href="https://krrystian.github.io/MysteryBox-Shop/">Link Here</a>
+            </div>
+            <div>
+                <h1><span>AT</span>M</h1>
+                <p>Mini ATM-Bank project. It allows to sign up/in, transfer money from one account to another.
+                    Accounts are saved in XML file. It's console app. I made it to learn more about Java. I'm more into JS now and WEB development.
+                </p>
+                <a href="https://github.com/Krrystian/BankATM/tree/main/src">Link Here</a>
+
+            </div>
+        </div>
+    </div>
+    <div class="container contact" id="contact">
+        <h1 class="title" data-text="CONTACT.ME">CONTACT.ME</h1>
+        <div class="contact-content">
+            <div class="left-side">
+                <div>
+                    <i class="fa-solid fa-location-dot"></i>
+                    Location
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>Lublin, Poland</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-envelope"></i>
+                    Email
+                    <i class="fa-solid fa-envelope"></i>
+                    <p>krystiancichorz708@gmail.com</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-mobile"></i>
+                    Mobile Number
+                    <i class="fa-solid fa-mobile"></i>
+                    <p>+48 503991034</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-earth-americas"></i>
+                    Languages
+                    <i class="fa-solid fa-earth-americas"></i>
+                    <p>Polish, English</p>
+                </div>
+
+            </div>
+            <div class="right-side">
+                <form action="#" method="post">
+                    <div class="info">
+                        <input type="text" required placeholder="YOUR NAME">
+                        <input type="email" required placeholder="YOUR EMAIL">
+                    </div>
+                    <div class="subject">
+                        <input type="text" required placeholder="SUBJECT">
+                    </div>
+                    <div class="message">
+                        <textarea name="message" cols="15" rows="8" required placeholder="Message Here..."></textarea>
+                    </div>
+                    <div class="buttons">
+                        <input type="submit" value="Send">
+                        <input type="reset" value="Reset">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</main>
+
+<div class="lightmode">
+    <div class="switch">
+        <span class="btn-icon" onclick="colorTheme()">
+            <i class="fa-solid fa-moon" id="lightmode-icon"></i>
+        </span>
+    </div>
+</div>
+
+<div class="menu">
+    <nav>
+        <ul>
+            <li class="active-btn">
+                <p>Home</p>
+                <span class="btn-icon" data-id="home">
+                    <i class="fa-solid fa-house"></i>
+                </span>
+            </li>
+            <li class="disabled-btn">
+                <p>About</p>
+                <span class="btn-icon" data-id="about">
+                    <i class="fa-solid fa-address-card"></i>
+                </span>
+            </li>
+            <li class="disabled-btn">
+                <p>Portfolio</p>
+                <span class="btn-icon" data-id="portfolio">
+                    <i class="fa-solid fa-briefcase"></i>
+                </span>
+            </li>
+            <li class="disabled-btn">
+                <p>Contact Me</p>
+                <span class="btn-icon" data-id="contact">
+                    <i class="fa-solid fa-envelope"></i>
+                </span>
+            </li>
+        </ul>
+    </nav>
+</div>
+<script src="app.js"></script>
+
+</body>
+</html>
