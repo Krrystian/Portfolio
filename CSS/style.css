@@ -176,15 +176,16 @@ body {
 }
 
 .about-content {
+    border: 3px solid navy;
     display: grid;
     grid-template-columns: repeat(2, 2fr);
-    padding-top: 3rem;
     grid-gap: 20px;
-    padding-bottom: 3%;
+    padding: 3%;
+    margin: 5% 10% 5% 5%;
+
 }
 
 .about-content > div {
-    margin-left: 10%;
     border: 6px solid var(--color-text-sec);
     border-radius: 15px;
     box-shadow: 7px 7px 2px var(--color-shadow);
@@ -201,7 +202,6 @@ main h1 {
 }
 
 .about-content .information-left {
-    justify-self: left;
     padding: 0 5% 5%;
     animation-name: slideInLeft;
 }
@@ -211,7 +211,6 @@ main h1 {
 }
 
 .about-content .skills-right {
-    margin-right: 20%;
     padding: 0 5% 5%;
     animation-name: slideInRight;
 }
